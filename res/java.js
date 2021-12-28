@@ -14,7 +14,7 @@ alert("Youtube  link coming soon");
 
 function whatsapp(){
    alert("Number Copied to clipboard.");
-   navigator.clipboard.writeText("+918267898267");
+   navigator.clipboard.writeText("+918267895427");
 }
 
 
