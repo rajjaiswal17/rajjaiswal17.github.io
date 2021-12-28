@@ -178,7 +178,7 @@ html {
   width: 50%;
   background-color: white;
   border-bottom-right-radius: 55px;
-  font-size: 2rem;
+  font-size: 1.2rem;
   padding: 40px;
 
   line-height: 2.5rem;
@@ -428,6 +428,20 @@ h3 {
 
   .feat {
     flex-flow: column nowrap;
+  }
+
+  .menubox img {
+    width: 25rem;
+    height: 17rem;
+  }
+  .menubox {
+    margin: 2rem 1rem; 
+    height: 22rem;
+    width: 30rem;
+  }
+
+  .bighead {
+    font-size: 3rem;
   }
 }
 
