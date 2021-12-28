@@ -1,0 +1,184 @@
+/* Order Box */
+#obox,
+#but,
+.bill {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  margin: 30px auto;
+  align-items: center;
+}
+#obox button {
+  margin: 20px;
+  border: none;
+  border-radius: 0.4rem;
+}
+#obox input,
+.remove {
+  display: none;
+  /* display: block; */
+}
+.ocol {
+  display: flex;
+  flex-flow: row wrap;
+
+  justify-content: space-evenly;
+  align-items: center;
+
+  padding: 20px;
+  width: 100vw;
+}
+.ocol p {
+  width: 30vw;
+  font-size: 2.4rem;
+}
+
+.ocol input[type="number"] {
+  font-size: 1.2em;
+  padding: 0.5rem;
+}
+
+.ocol input[type="number"]:focus {
+  outline: none;
+  border: 3px solid #ffa800;
+}
+
+/* for arrow of number input */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  appearance: none;
+}
+
+/* buttons */
+.add {
+  background-color: #0ac828;
+  color: white;
+  width: 10rem;
+  padding: 0.8rem 2rem;
+}
+.remove {
+  background-color: rgba(255, 0, 0, 0.8);
+  color: white;
+  width: 10rem;
+  padding: 0.8rem 2rem;
+}
+
+.submit {
+  background-color: #0ac828;
+  padding: 0.6rem 1.6rem;
+  font-size: 1.3rem;
+  border-radius: 0.4rem;
+  border: none;
+  transition: transform 0.7s, background-color 0.7s;
+}
+.submit:hover {
+  transform: scale(1.2);
+  background-color: #ffa800;
+}
+
+/* table */
+#bill {
+  display: none;
+  margin: 30px auto;
+  background-color: #313131;
+  color: white;
+  box-shadow: 2px 2px 3px black;
+  border-radius: 1rem;
+  width: 80vw;
+  overflow: hidden;
+}
+#bill table {
+  width: 80vw;
+}
+#bill th,
+td {
+  padding: 15px 10px;
+  text-align: center;
+}
+#bill th {
+  letter-spacing: 3px;
+  font-size: 1.5rem;
+  padding: 25px 10px;
+}
+#bill h1 {
+  letter-spacing: 4px;
+  font-size: 3.5rem;
+  padding: 15px;
+  text-align: center;
+  width: 100%;
+  border-bottom: 2px solid white;
+}
+#bill td:hover {
+  background-color: white;
+  color: #313131;
+}
+#orderag {
+  display: none;
+  margin: auto;
+  width: 20rem;
+  background-color: #ffa800;
+  padding: 10px;
+  border-radius: 0.5rem;
+  margin: 30px auto;
+  transition: background-color 0.7s, transform 0.7s;
+}
+
+#orderag h1 {
+  text-align: center;
+}
+#orderag:hover {
+  transform: scale(1.2);
+  background-color: greenyellow;
+}
+#order {
+  font-size: 5rem;
+  text-shadow: none;
+}
+
+/* Media Query */
+@media (max-width: 1100px) {
+  .ocol p {
+    width: 20vw;
+    font-size: 1.4rem;
+  }
+
+  .ocol input[type="number"] {
+    font-size: 1.2em;
+    padding: 0.5rem;
+  }
+
+  #bill {
+    margin: 30px auto;
+    width: 95vw;
+  }
+  #bill table {
+    width: 90vw;
+    margin: auto;
+  }
+  #bill th,
+  td {
+    padding: 5px 2px;
+  }
+  #bill th {
+    letter-spacing: 1px;
+    font-size: 1rem;
+    padding: 15px 5px;
+  }
+  #bill td {
+    font-size: 0.8rem;
+  }
+  #bill h1 {
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    padding: 5px;
+  }
+
+  #orderag {
+    width: 12rem;
+    padding: 5x;
+    border-radius: 0.5rem;
+  }
+  #orderag h1 {
+    font-size: 1.2rem;
+  }
+}
