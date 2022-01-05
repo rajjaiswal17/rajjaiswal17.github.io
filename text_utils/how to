@@ -1,0 +1,23 @@
+in url.py
+from . import views
+add path
+path('name', views.index, name = index)
+
+
+create fun in views.py
+from django.http import HttpResponse
+def index(request):
+    return HttpResponse("Hello, World")
+
+for templates go in settings.py
+'DIRS':['templates'],
+make folder where manage.py is with name templates
+
+for template run
+from django.shortcuts import render
+return render(request,'index.html')
+third arg is dict accessed by {{}}
+
+getting data from form
+<form action="/removepunc" method='get'>
+print(request.GET.get('text','default'))
