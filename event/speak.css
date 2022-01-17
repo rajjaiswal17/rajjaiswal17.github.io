@@ -1,0 +1,69 @@
+#speakmain{
+    margin: 2rem;
+}
+/* Full content */
+#speakfull{
+    background: linear-gradient(#8a2ae3,#ff2c9c,#635cfe);
+    padding:3.5rem;
+}
+
+/* White background */
+.white{
+    background-color: white;
+    width:100%;
+    overflow: hidden;
+    border-radius: 1rem;
+}
+
+/* Intro Section */
+.intropara{
+background-color: whitesmoke;
+padding: 3rem;
+font-size: 1.2rem;
+}
+.intropara img{
+    width:40%;
+}
+.intropara p{
+    display: inline-block;
+    width:50%;
+}
+
+/* Speaker Heading */
+#speakh{
+    margin: 3rem;
+    font-size: 5rem;
+}
+
+/* Speaker section */
+#sec{
+flex-flow: row wrap;
+}
+.secbox{
+margin:5rem;
+}
+
+.secbox img{
+    width:15rem;
+    filter: saturate(0);
+    border-radius: 50%;
+    transition: filter 0.3s, transform 0.6s;
+}
+.secbox:hover img,.secbox:hover h3{
+     transform: rotateZ(360deg);
+    filter: saturate(1);
+    color:#aa51f0;
+}
+
+.secbox h3,p{
+    text-align: center;
+}
+.secbox h3{
+    margin-top: 1rem;
+    font-size: 2rem;
+    transition: color 0.3s;
+}
+.secbox p{
+    font-size: 1.2rem;
+}
+

@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="format.css">
+<link rel="stylesheet" href="all.css">
+
+<body>
+
+</body>
+
+</html>
+
+<div id="full">
+
+    <div id="side">
+        <a href="#1">Introduction</a>
+        <a href="#2">Basics</a>
+        <a href="#3">Selector</a>
+        <a href="#4">Attribute</a>
+        <a href="#5">Traversing</a>
+        <a href="#6">CSS</a>
+        <a href="#7">DOM</a>
+        <a href="#8">Event</a>
+        <a href="#9">AJAX</a>
+        <a href="#10">Effects</a>
+    </div>
+
+    <div id="cont">
+        <div id="main">
+
+            <div>
+                <section id="1">
+                    <h2>What is jQuery?</h2>
+                    <p>jQuery is a fast and concise JavaScript Library created by John Resig in 2006 with a nice motto:
+                        Write less, do more. jQuery simplifies HTML document traversing, event handling, animating, and
+                        Ajax interactions for rapid web development.</p>
+                    <p>Here is the list of important core features supported by jQuery −</p>
+                    <ul>
+                        <li><strong> DOM manipulation</strong> − The jQuery made it easy to select DOM elements,
+                            negotiate them and modifying their content by using cross-browser open source selector
+                            engine called Sizzle.
+                        </li>
+                        <li>
+                            <strong> Event handling − </strong> The jQuery offers an elegant way to capture a wide
+                            variety of events, such as a user clicking on a link, without the need to clutter the HTML
+                            code itself with event handlers.
+                        </li>
+                        <li>
+                            <strong>AJAX Support − </strong>The jQuery helps you a lot to develop a responsive and
+                            featurerich site using AJAX technology.
+                        </li>
+                        <li>
+                            <strong>Animations −</strong> The jQuery comes with plenty of built-in animation effects
+                            which you can use in your websites.
+                        </li>
+                        <li>
+                            <strong>Lightweight −</strong> The jQuery is very lightweight library - about 19KB in size
+                            (Minified and gzipped).
+                        </li>
+                    </ul>
+
+                    <h3>How to use jQuery?</h3>
+                    <p>There are two ways to use jQuery :- </p>
+                    <ul>
+                        <li> <strong> Local Installation − </strong>You can download jQuery library on your local
+                            machine and include it
+                            in your HTML code. </li>
+                        <li> <strong> CDN Based Version −</strong> You can include jQuery library into your HTML code
+                            directly from Content
+                            Delivery Network (CDN).</li>
+                    </ul>
+
+                </section>
+            </div>
+
+            <div>
+                <section id="2">
+                    <h2>Basics</h2>
+                    <p>jQuery is a framework built using JavaScript capabilities. So, you can use all the functions and
+                        other capabilities available in JavaScript. </p>
+
+                    <h3>String</h3>
+                    <p> A string in JavaScript is an immutable object that contains none, one or many characters.</p>
+
+
+                    <h3>Numbers</h3>
+                    <p>Numbers in JavaScript are double-precision 64-bit format IEEE 754 values. They are immutable,
+                        just as strings.</p>
+
+
+                    <h3>Boolean</h3>
+                    <p>A boolean in JavaScript can be either true or false. If a number is zero, it defaults to false.
+                        If an empty string defaults to false.</p>
+
+
+                    <h3>Objects</h3>
+                    <p>JavaScript supports Object concept very well.</p>
+
+                    <h3>Context</h3>
+                    <p>JavaScript famous keyword this always refers to the current context. Within a function this
+                        context can change,depending on how the function is called. </p>
+
+                    <h3>Closures</h3>
+                    <p>Closures are created whenever a variable that is defined outside the current accessed from within
+                        some inner scope.</p>
+                </section>
+            </div>
+
+            <div>
+                <section id="3">
+                    <h2>Selectors</h2>
+                    <p>The jQuery library harnesses the power of Cascading Style Sheets (CSS) selectors to let us
+                        quickly and easily access elements or groups of elements in the Document Object Model (DOM).</p>
+                    <p>A jQuery Selector is a function which makes use of expressions to find out matching elements from
+                        a DOM based on the given criteria.</p>
+
+                    <h3>The $() factory function</h3>
+                    <p>jQuery selectors start with the dollar sign and parentheses − $(). The factory function $() makes
+                        use of following three building blocks while selecting elements in a given document </p>
+
+                    <h3>How to Use Selectors?</h3>
+                    <p> The selectors are very useful and would be required at every step while using jQuery. They get
+                        the exact element that you want from your HTML document.</p>
+                </section>
+            </div>
+
+            <div>
+                <section id="4">
+                    <h2>Attribute</h2>
+                    <p>Some of the most basic components we can manipulate when it comes to DOM elements are the
+                        properties and attributes assigned to those elements.</p>
+                    <p>Most of these attributes are available through JavaScript as DOM node properties. Some of the
+                        more common properties are −</p>
+                    <ol>
+                        <li>className</li>
+                        <li>tagName</li>
+                        <li> id</li>
+                        <li>href</li>
+                        <li>title</li>
+                        <li>rel</li>
+                    </ol>
+
+
+                    <h3>Get Attribute Value</h3>
+                    <p>The attr() method can be used to either fetch the value of an attribute from the first element in the matched set or set attribute values onto all matched elements.</p>
+
+                    <h3>Set Attribute Value</h3>
+                    <p>The attr(name, value) method can be used to set the named attribute onto all elements in the wrapped set using the passed value.</p>
+
+<h3>Applying Styles </h3>
+<p> The addClass( classes ) method can be used to apply defined style sheets onto all the matched elements. You can specify multiple classes separated by space.</p>
+
+                </section>
+            </div>
+
+            <div>
+                <section id="5">
+<h2>Traversing</h2>
+<p>jQuery is a very powerful tool which provides a variety of DOM traversal methods to help us select elements in a document randomly as well as in sequential method. Most of the DOM Traversal Methods do not modify the jQuery object and they are used to filter out elements from a document based on given conditions.</p>
+
+<h3>Find Elements by Index</h3>
+<ul>
+    <li>Above every list has its own index, and can be located directly by using eq(index) method as below example.</li>
+    <li>Every child element starts its index from zero, thus, list item 2 would be accessed by using $("li").eq(1) and so on.</li>
+</ul>
+
+<h3>Filtering out Elements</h3>
+<P>The filter( selector ) method can be used to filter out all elements from the set of matched elements that do not match the specified selector(s). The selector can be written using any selector syntax.</P>
+               
+<h3>Locating Descendant Elements</h3>
+<p>The find( selector ) method can be used to locate all the descendant elements of a particular type of elements. The selector can be written using any selector syntax.</p>
+
+
+</section>
+            </div>
+
+            <div>
+                <section id="6">
+<h2>CSS</h2>
+<p>The jQuery library supports nearly all of the selectors included in Cascading Style Sheet (CSS) specifications 1 through 3, as outlined on the World Wide Web Consortium's site.
+</p>
+<p> Using JQuery library developers can enhance their websites without worrying about browsers and their versions as long as the browsers have JavaScript enabled.</p>
+<p>Most of the JQuery CSS Methods do not modify the content of the jQuery object and they are used to apply CSS properties on DOM elements.</p>
+
+
+<h3>Apply CSS Properties</h3>
+<p>This is very simple to apply any CSS property using JQuery method css( PropertyName, PropertyValue ).</p>
+
+<h3>Apply Multiple CSS Properties</h3>
+<p>You can apply multiple CSS properties using a single JQuery method CSS( {key1:val1, key2:val2....). You can apply as many properties as you like in a single call.</p>
+
+    <h3>Setting Element Width & Height</h3>
+    <p>The width( val ) and height( val ) method can be used to set the width and height respectively of any element.</p>
+                </section>
+            </div>
+
+            <div>
+                <section id="7">
+<h2>DOM</h2>
+<p>JQuery provides methods to manipulate DOM in efficient way. You do not need to write big code to modify the value of any element's attribute or to extract HTML code from a paragraph or division.</p>
+<p>JQuery provides methods such as .attr(), .html(), and .val() which act as getters, retrieving information from DOM elements for later use.</p>
+
+<h3>Content Manipulation</h3>
+<p>The html( ) method gets the html contents (innerHTML) of the first matched element.</p>
+
+<h3>DOM Element Replacement</h3>
+<p>You can replace a complete DOM element with the specified HTML or DOM elements. The replaceWith( content ) method serves this purpose very well.</p>
+
+<h3>Removing DOM Elements</h3>
+<P>There may be a situation when you would like to remove one or more DOM elements from the document. JQuery provides two methods to handle the situation.</P>
+<P>The empty( ) method remove all child nodes from the set of matched elements where as the method remove( expr ) method removes all matched elements from the DOM.</P>
+
+
+                </section>
+            </div>
+
+            <div>
+                <section id="8">
+<h2>Events</h2>
+<p>We have the ability to create dynamic web pages by using events. Events are actions that can be detected by your Web Application.</p>
+<p>Following are the examples events −</p>
+
+<h3>Binding Event Handlers</h3>
+<p>Using the jQuery Event Model, we can establish event handlers on DOM elements with the bind() method </p>
+
+<h3>Removing Event Handlers</h3>
+<p>Typically, once an event handler is established, it remains in effect for the remainder of the life of the page. There may be a need when you would like to remove event handler.</p>
+<p>jQuery provides the unbind() command to remove an exiting event handler. </p>
+
+<h3>The Event Object</h3>
+<p>The callback function takes a single parameter; when the handler is called the JavaScript event object will be passed through it.</p>
+<p>The event object is often unnecessary and the parameter is omitted, as sufficient context is usually available when the handler is bound to know exactly what needs to be done when the handler is triggered, however there are certain attributes which you would need to be accessed.</p>
+
+
+                </section>
+            </div>
+
+            <div>
+                <section id="9">
+<h2>AJAX</h2>
+<p>AJAX is an acronym standing for Asynchronous JavaScript and XML and this technology helps us to load data from the server without a browser page refresh.</p>
+<p>If you are new with AJAX, I would recommend you go through our Ajax Tutorial before proceeding further.</p>
+<p> JQuery is a great tool which provides a rich set of AJAX methods to develop next generation web application.</p>
+
+<p>Here is the description of all the parameters −</p>
+<ul>
+    <li><strong>URL −</strong> The URL of the server-side resource to which the request is sent. It could be a CGI, ASP, JSP, or PHP script which generates data dynamically or out of a database. </li>
+    <li><strong>data −</strong> This optional parameter represents an object whose properties are serialized into properly encoded parameters to be passed to the request. If specified, the request is made using the POST method. If omitted, the GET method is used.</li>
+    <li><strong>callback −</strong> A callback function invoked after the response data has been loaded into the elements of the matched set. The first parameter passed to this function is the response text received from the server and second parameter is the status code.</li>
+</ul>
+
+<h3>Getting JSON Data</h3>
+<p>There would be a situation when server would return JSON string against your request. JQuery utility function getJSON() parses the returned JSON string and makes the resulting string available to the callback function as first parameter to take further action.</p>
+
+<h3>Passing Data to the Server</h3>
+<p>Many times you collect input from the user and you pass that input to the server for further processing. JQuery AJAX made it easy enough to pass collected data to the server using data parameter of any available Ajax method.</p>
+
+
+                </section>
+            </div>
+
+            <div>
+                <section id="10">
+<h2>Effects</h2>
+<p>jQuery provides a trivially simple interface for doing various kind of amazing effects. jQuery methods allow us to quickly apply commonly used effects with a minimum configuration. This tutorial covers all the important jQuery methods to create visual effects.</p>
+
+<h3>Showing and Hiding Elements</h3>
+<p>The commands for showing and hiding elements are pretty much what we would expect − show() to show the elements in a wrapped set and hide() to hide them.</p>
+
+<h3>Toggling the Elements</h3>
+<p>jQuery provides methods to toggle the display state of elements between revealed or hidden. If the element is initially displayed, it will be hidden; if hidden, it will be shown.</p>
+
+<p>Here is the description of all the parameters −
+</p>
+<ol>
+    <li><strong> speed −</strong> A string representing one of the three predefined speeds ("slow", "normal", or "fast") or the number of milliseconds to run the animation (e.g. 1000).</li>
+    <li><strong>callback −</strong> This optional parameter represents a function to be executed whenever the animation completes; executes once for each element animated against.</li>
+</ol>
+
+                </section>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+</div>
+
+</body>
+
+</html>

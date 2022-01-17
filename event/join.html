@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="utility.css" />
+  <link rel="stylesheet" href="join.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Join Us</title>
+</head>
+
+<body>
+
+  <span id="top"></span>
+
+  <!-- Navbar -->
+  <header>
+    <ul class="nav center">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="speaker.html">SPEAKERS</a></li>
+      <li><a href="about.html">ABOUT</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+  </header>
+
+  <div class="space"></div>
+  <!-- Content -->
+  <section id="main" class="center">
+    <h1>JOIN US!</h1>
+    <img style="width: 40rem;" src="img/support.svg" />
+  </section>
+
+  <div class="space"></div>
+
+<!-- fullform body -->
+  <section id="fullform">
+    
+    <h3 id="req">
+      *FILL THIS FORM TO JOIN!
+    </h3>
+    
+    <!-- heading -->
+    <h1 id="formh">FORM</h1>
+    
+    <!-- form -->
+    <div id="form" class="center">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name">
+      </div>
+
+      <div>
+        <label for="section">Section:</label>
+        <input type="text" name="section">
+      </div>
+
+      <div>
+        <label for="Course">Course:</label>
+        <input type="text" name="name">
+      </div>
+
+      <div>
+        <label for="branch">Branch:</label>
+        <select name="branch" >
+          <option value="" disabled selected hidden>----Branch----</option>
+          <option value="EC">ELECTRONIC & COM.ENGG.</option>
+          <option value="CSE">COMPUTER SCIENCE</option>
+          <option value="ME">MECHANICAL ENGG.</option>
+          <option value="EE">ELECTRICAL ENGG.</option>
+          <option value="BT">BIO TECHNOLOGY</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="rollno">Roll No.</label>
+        <input type="text" name="rollno">
+      </div>
+
+      <div>
+        <label for="email">Email:</label>
+        <input type="text" name="name">
+      </div>
+
+      <div>
+        <label for="phno">Phone Number:</label>
+        <input type="text" name="phno">
+      </div>
+
+<button onclick="join()">
+  JOIN  US
+</button>
+
+</div>
+  </section>
+
+  <!-- form end -->
+
+
+  <!-- contact -->
+  <div id="contact">
+
+    <!-- about us -->
+    <div class="intro">
+      <h3>CS CLUB</h3>
+      <p>
+        Our Club has been developing high-quality and reliable software for
+        corporate needs since 2015. We are renowned professionals of software
+        development.
+      </p>
+
+      <div>
+        <h3>ADDRESS</h3>
+        <p>23 Near Baghpat Bypass, Meerut, Uttar Pradesh</p>
+      </div>
+
+      <div>
+        <h3>PHONES</h3>
+        <p>+918267898267, +917310609811</p>
+      </div>
+
+      <div>
+        <h3>E-MAILS</h3>
+        <p>csclub@miet.ac.in</p>
+      </div>
+
+      <div id="logo">
+        <a onclick="contact(1)">
+          <img src="img/facebook.svg" />
+        </a>
+        <a onclick="contact(2)">
+          <img src="img/google.svg" />
+        </a>
+        <a onclick="contact(3)">
+          <img src="img/insta.svg" />
+        </a>
+        <a onclick="contact(4)">
+          <img src="img/twitter.svg" />
+        </a>
+      </div>
+
+    </div>
+
+
+
+
+    <!-- contact form -->
+    <div class="form">
+      <h3>CONTACT US</h3>
+      <input type="text" placeholder="Name" />
+      <input type="text" placeholder="Email" />
+      <textarea cols="30" rows="10" placeholder="Message"></textarea>
+      <button onclick="send()">SEND</button>
+    </div>
+
+    <!-- what we offer -->
+    <div class="work">
+      <h3>WHAT WE OFFER?</h3>
+      <p>Web Development</p>
+      <p>Android App</p>
+      <p>IOS App</p>
+      <p>UI/UX</p>
+      <p>DB Management</p>
+      <p>Windows App</p>
+      <a href="#top" class="center">
+        <img src="img/arrow.svg">
+      </a>
+
+    </div>
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <p>THIS WEBSITE IS MADE BY RAJ JAISWAL</p>
+  </footer>
+</body>
+<script src="java.js"></script>
+
+</html>

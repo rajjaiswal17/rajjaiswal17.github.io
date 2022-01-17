@@ -1,0 +1,23 @@
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+    font-family: 'main','arial';
+
+}
+h1,h3{
+    font-family: 'head','arial';
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@font-face {
+    font-family: head;
+    src: url("font/font2.ttf");
+}
+@font-face {
+    font-family: main;
+    src: url("font/font1.ttf");
+}

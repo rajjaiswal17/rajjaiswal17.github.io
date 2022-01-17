@@ -1,0 +1,403 @@
+/* navbar */
+.nav {
+  background-image: linear-gradient(
+    to right,
+    #00c58d,
+    #635cfe,
+    #fc5454,
+    #fcbe2e
+  );
+  height: 4rem;
+}
+
+.nav li,
+a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  height: 100%;
+}
+.nav a {
+  font-size: 1.4rem;
+  padding: 1rem 4rem;
+}
+.nav a:hover {
+  background-color: white;
+  color: #252525;
+}
+
+/* Top section */
+#main {
+  padding: 0rem, 4rem;
+  justify-content: space-evenly;
+}
+#main h1,
+#advantage > h1,
+#venue h1,
+#sponsor h1,
+#years h1 {
+  font-size: 5.5rem;
+  text-align: left;
+  font-weight: bolder;
+  letter-spacing: 0.5rem;
+}
+#main h1{
+  background: linear-gradient(to right, #00c58d, #635cfe, #fc5454, #fcbe2e);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  filter: drop-shadow(1px 1px 2px black);
+}
+#main img {
+  width: 55vw;
+  filter: drop-shadow(2px 2px 5px black);
+  transition: transform 0.5s;
+}
+#main img:hover {
+  transform: scale(1.1);
+}
+
+#cut {
+  position: relative;
+  width: 100%;
+  top: 3rem;
+}
+
+/*See  What's On */
+#what {
+  background: linear-gradient(#635cfe, #00c58d);
+  padding: 8rem 3rem 4rem 3rem;
+  color: #252525;
+}
+.whath {
+  background-color: #635cfe;
+  font-size: 5rem;
+  padding: 2rem;
+}
+#mid {
+  position: relative;
+  top: -4rem;
+}
+.col {
+  color: #635cfe;
+}
+#what div {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  background-color: white;
+  width: 30%;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 4px black;
+
+  padding: 5rem;
+  margin-right: 4rem;
+  height: 16rem;
+  transition: transform 0.4s;
+}
+#what div:hover {
+  transform: scale(1.12);
+}
+#what p {
+  text-align: center;
+}
+#what h3 {
+  margin-top: 0.7rem;
+  font-size: 3rem;
+  letter-spacing: 2px;
+}
+
+/* Confernce */
+#conf {
+  background: linear-gradient(#00c58d, #01865e, #fcbe2e);
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+#conf div {
+  padding: 1rem 0rem;
+  width: 42rem;
+  margin: 2rem;
+
+  border-radius: 2rem;
+  box-shadow: 2px 2px 4px black;
+
+  transition: background-color 0.6s;
+}
+#conf div:hover {
+  background-color: #252525;
+  color: white;
+}
+#conf p {
+  font-size: 1.2rem;
+  padding: 2rem;
+  line-height: 2rem;
+}
+#conf h1 {
+  color: #00c58d;
+  padding: 2rem;
+  font-size: 3rem;
+}
+#conf div {
+  background-color: white;
+}
+
+/* venue */
+#venue {
+  background-color: #fcbe2e;
+  padding: 4rem 0rem;
+}
+#venue img {
+  filter: drop-shadow(2px 3px black);
+}
+#venue p {
+  font-size: 2rem;
+  letter-spacing: 4px;
+}
+#venue h1,
+#sponsor h1 {
+  text-align: center;
+  text-shadow: 2px 4px 4px black;
+  width: 100%;
+}
+#venuecon {
+  flex-direction: column;
+  cursor: pointer;
+
+  margin: 7rem;
+
+  background-color: white;
+
+  border-radius: 2rem;
+  box-shadow: 2px 2px 5px black;
+
+  transition: color 0.2s, background-color 0.5s;
+}
+#venuecon:hover {
+  background-color: #252525;
+  color: white;
+}
+#venue > div {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+/* Sponsor */
+#sponsor {
+  padding: 3rem;
+}
+#sponsor h1 {
+  color: #00a1e0;
+  margin: 3rem;
+}
+#sponsor div {
+  margin: 6rem;
+  flex-wrap: wrap;
+}
+#sponsor img {
+  width: 18rem;
+  margin: 2rem;
+  transition: transform 0.4s;
+}
+#sponsor img:hover {
+  transform: scale(0.8);
+}
+
+/* advantage */
+#advantage {
+  flex-direction: column;
+}
+
+#adhead {
+  background-color: #252525;
+}
+#ad1 {
+  background-color: #635cfe;
+}
+#ad2 {
+  background-color: #00c58d;
+}
+#ad3 {
+  background-color: #fcbe2e;
+}
+
+#advantage > h1 {
+  color: white;
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+}
+#advantage img {
+  width: 35rem;
+  margin: 2rem 0rem;
+  filter: drop-shadow(3px 3px 6px black);
+  transition: transform 0.5s;
+}
+#advantage img:hover {
+  transform: scale(1.1);
+}
+
+.adbox {
+  width: 100vw;
+  padding: 1.5rem 3rem;
+  flex-direction: column;
+  font-size: 2rem;
+}
+.adbox h1 {
+  padding: 1rem 0rem;
+  font-size: 3rem;
+}
+.adgrad1,
+.adgrad2,
+.adgrad3 {
+  height: 7rem;
+  width: 100vw;
+}
+.adgrad1 {
+  background: linear-gradient(#635cfe, #00c58d);
+}
+.adgrad2 {
+  background: linear-gradient(#00c58d, #fcbe2e);
+}
+.adgrad3 {
+  background: linear-gradient(#fcbe2e, #635cfe);
+}
+
+/* Contact */
+#contact {
+  display: grid;
+  padding: 1rem;
+  color: white;
+  place-items: center;
+  background-color: #635cfe;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+#contact h3 {
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+}
+#contact > div > h3 {
+  font-size: 3rem;
+}
+
+/* Three sections */
+.intro,
+.work,
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+  height: 30rem;
+}
+.intro,
+.work,
+.form p {
+  font-size: 1rem;
+  height: 100%;
+}
+
+/* Intro section */
+.intro div {
+  cursor: pointer;
+  margin: 0.6rem 0;
+  display: grid;
+  grid-template-columns: auto 15rem;
+  column-gap: 1rem;
+}
+.intro > p {
+  margin: 2rem 0rem;
+  text-align: left;
+}
+.intro div h3 {
+  margin-right: 2rem;
+}
+
+/* logo */
+#logo {
+  display: flex;
+  width: 70%;
+  margin-top: 3rem;
+  justify-content: space-between;
+}
+#logo img {
+  height: 3rem;
+  filter: invert(1);
+  transition: filter 0.3s, transform 0.3s;
+}
+#logo img:hover {
+  filter: invert(0.2);
+  transform: scale(1.5);
+}
+
+/* form */
+.form input,
+textarea,
+button {
+  margin: 0.6rem;
+  padding: 0.7rem;
+  border-radius: 0.3rem;
+  border: none;
+}
+.form input,
+textarea {
+  border: 2px solid white;
+}
+
+.form input:focus,
+textarea:focus {
+  outline: none;
+  border: 2px solid #fcbe2e;
+}
+.form button {
+  background-color: #00c58d;
+  font-size: 1.5rem;
+  box-shadow: 1px 1px 3px black;
+  transition: transform 0.9s;
+  cursor: pointer;
+}
+.form button:hover {
+  transform: scale(0.95);
+}
+.form button:active {
+  box-shadow: none;
+}
+
+/* work */
+.work h3,
+.work p {
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  transition: color 0.3s;
+}
+.work p:hover {
+  cursor: pointer;
+  color: #252525;
+}
+
+.work img {
+  margin: 2rem 0rem;
+  transform: rotate(180deg);
+  height: 3rem;
+  transition: filter 0.5s;
+}
+.work img:hover {
+  filter: invert(1);
+}
+
+/* Footer */
+footer {
+  display: grid;
+  place-items: center;
+  height: 5rem;
+  background-color: #252525;
+}
+footer p {
+  color: white;
+  letter-spacing: 2px;
+}

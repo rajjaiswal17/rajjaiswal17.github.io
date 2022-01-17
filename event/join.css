@@ -1,0 +1,271 @@
+/* Form body */
+#fullform {
+  position: relative;
+  top: 1px;
+  background: linear-gradient(#f70083, #635cfe);
+  padding: 3rem;
+  padding-top: 4rem;
+  clip-path: polygon(50% 5%, 100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+/* Reuired text */
+#req {
+  font-size: 2rem;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  color: black;
+}
+
+#formh {
+  color: white;
+  text-align: center;
+  font-size: 8rem;
+  font-weight: bolder;
+}
+
+/* form */
+#form {
+  background-color: white;
+  flex-direction: column;
+  margin: 3rem auto;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 2px 2px 4px black;
+  width: 45%;
+}
+#form div {
+  display: flex;
+
+  align-items: center;
+  justify-content: space-between;
+  margin: 2rem;
+
+  width: 65%;
+}
+
+#form input,
+select {
+  padding: 0.4rem;
+  font-size: 1rem;
+}
+label {
+  font-size: 1.5rem;
+}
+
+/* button */
+#form button {
+  background-color: #00cdc4;
+  margin: 1.5rem;
+  padding: 0.8rem;
+  width: 10rem;
+  box-shadow: 2px 2px black;
+  font-size: 1.2rem;
+  transition: background-color 0.5s;
+}
+#form button:hover {
+  background-color: #20b9b2;
+}
+button:active {
+  box-shadow: none;
+}
+
+/* About
+css */
+
+/* Why you should join */
+#whyjoin {
+  padding: 2rem;
+  flex-direction: column;
+}
+
+#whyjoin h1,
+#grow h1 {
+  width: 100%;
+  font-size: 5rem;
+  text-align: center;
+}
+#whyjoin h3,
+#whyjoin p {
+  width: 70%;
+}
+#whyjoin h3 {
+  font-size: 3rem;
+}
+#whyjoin p {
+  line-height: 2.3rem;
+  font-size: 1.2rem;
+}
+strong {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+}
+
+/* years of experience*/
+#years {
+  clip-path: polygon(50% 23%, 100% 0, 100% 100%, 0 100%, 0 2%);
+  background-color: #252525;
+  display: grid;
+  grid-template-columns: 2fr 25rem 2fr;
+  column-gap: 4rem;
+  color: white;
+  place-items: center;
+
+  padding: 10rem 3rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+#years h1 {
+  font-size: 23rem;
+  background: url("img/ten.jfif");
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Experience */
+#exp {
+  flex-direction: column;
+}
+#exp h3 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+#exp p {
+  font-size: 1rem;
+}
+#expb {
+  font-size: 0.9rem;
+  background-color: lightgrey;
+  transition: background-color 0.2s;
+}
+#expb:hover {
+  background-color: #ff2c9c;
+  color: black;
+}
+
+/* tab */
+#tab {
+  height: 70%;
+}
+#tab div {
+  padding: 1rem;
+}
+#tab p {
+  padding: 0rem 1rem;
+
+  font-size: 1.2rem;
+}
+#tab h2 {
+  font-size: 3.5rem;
+}
+
+/* How will you grow? */
+#grow {
+  flex-direction: column;
+  padding: 4rem 1rem;
+  padding-bottom: 0rem;
+}
+#grow > div {
+  margin: 4rem 0rem;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  width: 90%;
+}
+
+#grow > div > div {
+  overflow: hidden;
+  border-radius: 0.6rem;
+  text-align: left;
+  margin: 1rem;
+  width: 16rem;
+  height: 16rem;
+  box-shadow: 1px 1px 2px black;
+}
+
+#grow > div > div > div {
+  padding: 0rem 2rem;
+}
+.right {
+  transition: transform 0.4s;
+}
+.right > h3 {
+  height: 4.5rem;
+  width: 4.5rem;
+
+  float: right;
+  padding: 0.9rem 1.1rem;
+
+  clip-path: circle(95.3% at 100% 4%);
+  background-color: #7a5ded67;
+  color: #37b1dc;
+
+  text-align: right;
+  transition: background-color 0.2s;
+}
+
+.right:hover > h3 {
+  background-color: #7a5ded;
+  color: #37b1dc;
+}
+.right:hover {
+  transform: scale(1.15);
+}
+#grow img {
+  margin-top: 2rem;
+  height: 4rem;
+}
+#grow h3 {
+  font-size: 2rem;
+}
+#grow p {
+  font-size: 1.1rem;
+}
+
+/* Our Services */
+
+#servicefull {
+  padding: 8rem;
+  background-color: whitesmoke;
+}
+
+#servicefull h1 {
+  font-size: 7rem;
+  margin-bottom: 4rem;
+  text-align: center;
+
+  background: linear-gradient(to right, #7e4bf5, #ff2c9c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#service {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 6rem;
+  column-gap: 10rem;
+}
+
+#service > div {
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+#service > div:hover h3 {
+  background: linear-gradient(to right, #7e4bf5, #ff2c9c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#service img {
+  width: 7rem;
+  margin: 1rem;
+}
+#service > div h3 {
+  font-size: 1.8rem;
+}
+#service > div p {
+  font-size: 1rem;
+}
+
